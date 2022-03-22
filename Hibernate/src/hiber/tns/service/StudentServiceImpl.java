@@ -1,17 +1,17 @@
 package hiber.tns.service;
 
-import hiber.tns.dao.StudentDao;
+import hiber.tns.dao.StudentDaoImpl;
 import hiber.tns.entity.Student;
 
 public class StudentServiceImpl implements StudentService  {
 	StudentDao sd;
-	StudentServiceImpl()
+	public StudentServiceImpl()
 	{
-		sd=new StudentDao() {
+		sd=new StudentDaoImpl() {
 		}
 	@Override
 	public void addStudent(Student student) {
-		sd.add
+		sd.addStudent(student);
 		}
 
 }
